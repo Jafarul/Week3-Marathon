@@ -1,0 +1,92 @@
+Session Agenda for Week1Day3
+
+1. Recap -                    5 min
+2. Hoisting and Scoping -     50 min
+3. Break-                     10 min
+4. Breakout-                  25 min
+5. Conditional Statements -   30 min
+
+
+
+Hoisting
+--------
+
+Hoisting is the default behavior of JavaScript where declarations are moved to the 
+top of their scope during the memory creation phase before execution.
+
+var -> Hoisted and initialized with undefined
+let-> Hoisted but not initialized → accessing before declaration gives ReferenceError (TDZ)
+const-> Hoisted but not initialized → accessing before declaration gives ReferenceError (TDZ)
+
+TDZ(Temporal dead zone)-> The time period between hoisting and initialization of a variable, where
+it cannot be accessed.
+
+
+Hoisting was introduced to provide coding flexibility by allowing function and variable declarations 
+to be recognized before their actual declaration during code execution.
+
+
+Scoping
+-------
+
+visibility or accessibility of the variable in the code.
+Scoping helps organize code by restricting where variables can be accessed
+
+Types of scope:
+--------------
+
+Global scope → accessible everywhere
+Function scope → accessible only inside a function
+Block scope → accessible only inside the block { }
+
+
+
+Conditional statements
+----------------------
+
+Conditional statements are used to make decisions in code.
+
+Based on a condition (true/false)
+JavaScript decides which block to execute
+
+types:
+------
+
+1) if ,  used for making decisions based on conditions.
+   if...else  -> used for conditions (>, <, ==, etc.), range and logic.
+   else if   
+
+if (condition) {
+  // code if condition is true
+} else {
+  // code if condition is false
+}
+
+2) Switch     -> used for multiple exact value comparisons or matching.
+ 
+A switch statement evaluates an expression and executes the matching case block.
+
+syntax:
+-------
+
+switch(expression) {
+  case value1:
+    // code
+    break;
+
+  case value2:
+    // code
+    break;
+
+  default:
+    // code if no match
+}
+
+The switch statement evaluates the expression once, compares it with each case using strict 
+comparison (===), executes the matching case block, uses break to stop further execution, and 
+if no match is found, the default block runs.
+
+
+
+
+
